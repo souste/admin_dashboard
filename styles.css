@@ -1,3 +1,15 @@
-h1 {
-  color: red;
+.header {
+  background-color: lightblue;
+}
+
+.dashboard {
+  background-color: lightgreen;
+}
+
+.main-content {
+  background-color: lightpink;
+}
+
+.your-projects {
+  background-color: white;
 }
