@@ -1,15 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+}
+
 .header {
   background-color: lightblue;
+  display: grid;
+  grid-column: 2;
+  grid-row: 1 / 2;
 }
 
 .dashboard {
   background-color: lightgreen;
+  display: grid;
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
 
 .main-content {
   background-color: lightpink;
-}
-
-.your-projects {
-  background-color: white;
+  display: grid;
+  grid-column: 2;
+  grid-row: 2 / 3;
 }
