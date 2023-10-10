@@ -4,12 +4,33 @@
   grid-template-rows: 1fr 5fr;
 }
 
+/* HEADER */
+
 .header {
   background-color: lightblue;
   display: grid;
   grid-column: 2;
   grid-row: 1 / 2;
+  grid-template-rows: 1fr 1fr;
 }
+
+.header-search {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.header-menu {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.header-menu ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+}
+
+/* DASHBOARD */
 
 .dashboard {
   background-color: lightgreen;
@@ -18,9 +39,54 @@
   grid-row: 1 / 3;
 }
 
+.dashboard-header {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  /* should I change size to relative? */
+}
+
+.dashboard ul,
+.menu li {
+  list-style-type: none;
+}
+
+.dashboard p {
+  color: lightgreen;
+}
+
+.dashboard li {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  /* should I change size to relative? */
+}
+
+/* MAIN CONTENT */
+
 .main-content {
   background-color: lightpink;
   display: grid;
   grid-column: 2;
   grid-row: 2 / 3;
+  grid-template: 3fr 1fr;
+}
+
+.your-projects {
+  display: grid;
+  gap: 10px;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-column: 1;
+}
+
+.card {
+  background-color: white;
+}
+
+.announcements {
+  grid-column: 2;
+}
+
+.trending {
+  grid-column: 2;
 }
