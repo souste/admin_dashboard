@@ -70,23 +70,31 @@
   grid-column: 2;
   grid-row: 2 / 3;
   grid-template: 3fr 1fr;
+  padding-bottom: 50px;
 }
 
 .your-projects {
   display: grid;
-  gap: 10px;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+
   grid-column: 1;
+}
+
+.your-projects-cards {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 .card {
   background-color: white;
 }
 
-.announcements {
+.announcements-trending {
   grid-column: 2;
 }
 
+.announcements {
+}
+
 .trending {
-  grid-column: 2;
 }
