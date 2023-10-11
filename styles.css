@@ -34,7 +34,7 @@ input {
 
 .profile {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 2fr;
+  grid-template-columns: 0.8fr 1fr 2fr;
   align-items: center;
   padding-left: 30px;
 }
@@ -48,6 +48,7 @@ input {
 .profile-name {
   font-weight: bold;
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Greeting /Button Row */
@@ -73,6 +74,7 @@ input {
 
 .greeting-text p {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .greeting-text > .line1 {
