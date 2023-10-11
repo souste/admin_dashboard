@@ -118,21 +118,37 @@ button {
 .dashboard-header {
   color: white;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.dashboard-header img {
+  height: 40px;
+  gap: 10px;
+}
+
+.dashboard ul {
+  padding-bottom: 30px;
+  padding-left: 0px;
 }
 
 .dashboard li {
   color: white;
   font-weight: bold;
   font-size: 25px;
-  padding-bottom: 10px;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
-.dashboard ul {
-  padding-bottom: 30px;
+li img {
+  background-color: #f87171;
+  height: 30px;
 }
 
 /* MAIN CONTENT */
