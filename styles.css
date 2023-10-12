@@ -34,12 +34,12 @@ input {
 
 .profile {
   display: grid;
-  grid-template-columns: 0.8fr 1fr 2fr;
+  grid-template-columns: 0.5fr 0.7fr 2.2fr;
   align-items: center;
   padding-left: 30px;
 }
 
-.profile-pic {
+.header .profile-pic {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -101,6 +101,12 @@ button {
   font-weight: bold;
   border: 1px solid white;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+button:active {
+  width: 6.5rem;
+  height: 3rem;
 }
 
 /* DASHBOARD */
@@ -123,6 +129,7 @@ button {
   padding-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 4fr;
+  gap: 20px;
 }
 
 .dashboard-header img {
@@ -138,12 +145,17 @@ button {
 .dashboard li {
   color: white;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
   padding-bottom: 20px;
+  cursor: pointer;
+}
+
+li:active {
+  text-decoration: underline;
 }
 
 li img {
@@ -190,6 +202,7 @@ li img {
   border-radius: 5%;
   padding: 10px;
   border-left: 10px solid lightgreen;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
 }
 
 .project-cards .card-title {
@@ -201,13 +214,13 @@ li img {
 .card .content {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  color: grey;
 }
 
 /* Announcements */
 
 .announcements-trending {
   grid-column: 2;
-  padding-right: 25px;
 }
 
 .announcements .title {
@@ -219,9 +232,11 @@ li img {
 
 .announcement-cards {
   background-color: white;
-  padding: 10px 15px 10px 20px;
+  padding: 20px;
   margin-top: 15px;
   border-radius: 5%;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+  margin-right: 25px;
 }
 
 .announcement-cards .card {
@@ -237,6 +252,18 @@ li img {
 .announcement-cards .content {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+  color: grey;
+}
+
+.card-logos {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 100px;
+}
+
+.card-logos img {
+  height: 30px;
+  padding-left: 20px;
 }
 
 /* Trending */
@@ -253,4 +280,37 @@ li img {
   padding: 10px 15px 10px 20px;
   margin-top: 15px;
   border-radius: 5%;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+  margin-right: 25px;
+}
+
+.trending-cards .card {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 15px;
+  justify-content: center;
+}
+
+.trending-cards .profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 45%;
+  display: grid;
+  display: grid;
+  padding-top: 5px;
+}
+
+.trending-cards .content {
+  margin-bottom: 30px;
+}
+
+.trending-cards .email {
+  font-family: "Roboto", sans-serif;
+}
+
+.trending-cards .content {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: grey;
+  text-align: start;
 }
