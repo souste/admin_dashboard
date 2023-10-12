@@ -38,6 +38,15 @@ input {
   border-radius: 10px;
 }
 
+form {
+  display: flex;
+  gap: 10px;
+}
+
+form img {
+  height: 30px;
+}
+
 .profile {
   display: grid;
   grid-template-columns: 0.5fr 0.7fr 2.2fr;
