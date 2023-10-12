@@ -158,32 +158,99 @@ li img {
   display: grid;
   grid-column: 2;
   grid-row: 2 / 3;
-  grid-template: 3fr 1fr;
+  grid-template-columns: 3fr 1fr;
   padding-bottom: 50px;
+  gap: 25px;
 }
+
+/* Your Projects */
 
 .your-projects {
   display: grid;
-
   grid-column: 1;
+  grid-template-rows: 1fr 10fr;
+  padding-left: 25px;
 }
 
-.your-projects-cards {
+.projects-title {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.project-cards {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 25px;
 }
 
-.card {
+.project-cards .card {
   background-color: white;
+  border-radius: 5%;
+  padding: 10px;
+  border-left: 10px solid lightgreen;
 }
+
+.project-cards .card-title {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.card .content {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+/* Announcements */
 
 .announcements-trending {
   grid-column: 2;
+  padding-right: 25px;
 }
 
-.announcements {
+.announcements .title {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
-.trending {
+.announcement-cards {
+  background-color: white;
+  padding: 10px 15px 10px 20px;
+  margin-top: 15px;
+  border-radius: 5%;
+}
+
+.announcement-cards .card {
+  border-bottom: 1px solid grey;
+}
+
+.announcement-cards .card-title {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
+.announcement-cards .content {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+/* Trending */
+
+.trending .title {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.trending-cards {
+  background-color: white;
+  padding: 10px 15px 10px 20px;
+  margin-top: 15px;
+  border-radius: 5%;
 }
