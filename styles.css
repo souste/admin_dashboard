@@ -43,8 +43,13 @@ form {
   gap: 10px;
 }
 
+i {
+  cursor: pointer;
+}
+
 form img {
   height: 30px;
+  cursor: pointer;
 }
 
 .profile {
@@ -58,6 +63,7 @@ form img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .profile-name {
@@ -279,6 +285,7 @@ li img {
 .card-logos img {
   height: 30px;
   padding-left: 20px;
+  cursor: pointer;
 }
 
 /* Trending */
@@ -313,6 +320,7 @@ li img {
   display: grid;
   display: grid;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .trending-cards .content {
@@ -321,6 +329,7 @@ li img {
 
 .trending-cards .email {
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 
 .trending-cards .content {
@@ -328,4 +337,5 @@ li img {
   font-size: 15px;
   color: grey;
   text-align: start;
+  cursor: pointer;
 }
